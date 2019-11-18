@@ -1,4 +1,4 @@
-# template
+# Practices
 
 ## Project setup
 ```
