@@ -28,15 +28,17 @@ const routes = [
     component: () => import('../components/ChaperTwo.vue')
   },
   {
-    path: '*',
-    name: '404',
-    component: () => import('../views/404.vue')
-  },
-  {
     path: '/todo',
     name: 'todo',
     component: () => import('../views/AppTodo.vue')
+  },
+  {
+    path: '*',
+    redirect: '/',
+    name: '404',
+    component: () => import('../views/404.vue')
   }
+  
 ]
 
 const router = new VueRouter({

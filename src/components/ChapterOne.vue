@@ -6,7 +6,7 @@
       <p v-if="hours >= 12 && hours < 18">Good afternoon!</p>
       <p v-if="hours >= 18">Good evening!</p>
       <p>{{ seconds }} seconds have elapsed since you opened the page.</p>
-      <p>Current status: {{ statusFromId(status) }}</p>
+      
       <p>Sum of numbers: {{ numberTotal }}</p>
       <p>Product one cost: {{ productOneCost | formatCost('$') }}</p>
       
@@ -50,16 +50,16 @@ export default {
     }, 5000);
   },
 
-  methods: {
-    statusFromId(id) {
-      const status = {
-        0: "Asleep",
-        1: "Eating",
-        2: "Learning Vue"
-      }[id];
-      return status || "Unknown status: " + id;
-    }
-  },
+  // methods: {
+  //   statusFromId(id) {
+  //     const status = {
+  //       0: "Asleep",
+  //       1: "Eating",
+  //       2: "Learning Vue"
+  //     }[id];
+  //     return status || "Unknown status: " + id;
+  //   }
+  // },
 
     computed: {
         numberTotal: {

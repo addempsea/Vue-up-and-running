@@ -1,5 +1,6 @@
 <template>
   <div class="container fluid">
+    <h1>Mini Project</h1>
     <div class="">
       <add-todo class="mt-3"></add-todo>
       

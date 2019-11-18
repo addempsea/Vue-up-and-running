@@ -9,8 +9,8 @@
       <p>{{aprop}}</p>
       <button @click="handleClick">Clicked {{ clicks }} times</button>
     </div>
-    <ul v-for="(item, index) in items" :key="index" :style="{ backgroundColor: randomColor }">
-      <li>{{item}}</li>
+    <ul v-for="(item, index) in items" :key="index">
+      <li :style="{ backgroundColor: randomColor }">{{item}}</li>
     </ul>
   </div>
 </template>
